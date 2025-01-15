@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Simple Circle Background -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#FFB800" stroke-width="2"/>
+  
+  <!-- Simplified Modern Scissors -->
+  <g transform="translate(100 100) rotate(45)">
+    <path d="M-35,0 L35,0" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
+    <path d="M0,-35 L0,35" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
+    <!-- Simple Handle Dots -->
+    <circle cx="-35" cy="0" r="8" fill="#FFB800"/>
+    <circle cx="35" cy="0" r="8" fill="#FFB800"/>
+  </g>
+  
+  <!-- Simple Text Layout -->
+  <path id="textPath" d="M40,100 A60,60 0 1,1 160,100 A60,60 0 1,1 40,100" fill="none"/>
+  <text>
+    <textPath href="#textPath" startOffset="50%" text-anchor="middle">
+      <tspan fill="#FFB800" font-family="Arial, sans-serif" font-size="16">ADHAM MANSOUR</tspan>
+    </textPath>
+  </text>
+</svg>
