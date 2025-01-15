@@ -6,7 +6,7 @@
   <g transform="translate(100 100) rotate(45)">
     <path d="M-35,0 L35,0" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
     <path d="M0,-35 L0,35" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
-    <!-- Simple Handle Dots -->
+    <!-- Simple Handle Dots --> 
     <circle cx="-35" cy="0" r="8" fill="#FFB800"/>
     <circle cx="35" cy="0" r="8" fill="#FFB800"/>
   </g>
