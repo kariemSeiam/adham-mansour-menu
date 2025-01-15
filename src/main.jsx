@@ -15,13 +15,13 @@ const SEOWrapper = () => (
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://adhammansour.com/" />
+      <meta property="og:url" content="https://kariemseiam.github.io/adham-mansour-menu/" />
       <meta property="og:title" content="أدهم منصور - صالون حلاقة رجالي في بلبيس | أفضل صالون عرايس" />
       <meta property="og:description" content="صالون أدهم منصور في بلبيس - صالون العرسان الأول. خدمات حلاقة وتجميل للرجال، باقات عرايس مميزة، عناية بالبشرة. احجز موعدك الآن في أفضل صالون حلاقة ببلبيس." />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://adhammansour.com/" />
+      <meta property="twitter:url" content="https://kariemseiam.github.io/adham-mansour-menu/" />
       <meta property="twitter:title" content="أدهم منصور - صالون حلاقة رجالي في بلبيس | أفضل صالون عرايس" />
       <meta property="twitter:description" content="صالون أدهم منصور في بلبيس - صالون العرسان الأول. خدمات حلاقة وتجميل للرجال، باقات عرايس مميزة، عناية بالبشرة. احجز موعدك الآن في أفضل صالون حلاقة ببلبيس." />
 
@@ -46,7 +46,7 @@ const SEOWrapper = () => (
             "@context": "https://schema.org",
             "@type": "BeautySalon",
             "name": "صالون أدهم منصور",
-            "image": "https://adhammansour.com/logo.jpg",
+            "image": "https://kariemseiam.github.io/adham-mansour-menu/logo.jpg",
             "description": "صالون حلاقة رجالي وتجميل في بلبيس - متخصص في تجهيز العرسان وخدمات العناية بالبشرة للرجال",
             "address": {
               "@type": "PostalAddress",

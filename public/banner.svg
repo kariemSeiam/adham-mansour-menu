@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <!-- Ultra Premium Gradients -->
+    <linearGradient id="ultraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1">
+        <animate attributeName="stop-color" values="#000000;#1a1a1a;#000000" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1">
+        <animate attributeName="stop-color" values="#1a1a1a;#000000;#1a1a1a" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1">
+        <animate attributeName="stop-color" values="#000000;#1a1a1a;#000000" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Luxury Gold Gradients -->
+    <linearGradient id="luxuryGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1">
+        <animate attributeName="stop-color" values="#ffd700;#b8860b;#ffd700" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#daa520;stop-opacity:1">
+        <animate attributeName="stop-color" values="#daa520;#ffd700;#daa520" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1">
+        <animate attributeName="stop-color" values="#b8860b;#daa520;#b8860b" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Diamond Pattern -->
+    <pattern id="diamondPattern" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M15 0 L30 15 L15 30 L0 15 Z" fill="none" stroke="url(#luxuryGold)" stroke-width="0.5" opacity="0.1">
+        <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </pattern>
+
+    <!-- Premium Glass Effect -->
+    <filter id="premiumGlass">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -15" result="glass"/>
+      <feBlend in="SourceGraphic" in2="glass" mode="screen"/>
+      <feComposite operator="over"/>
+    </filter>
+
+    <!-- Ultra Glow -->
+    <filter id="ultraGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1   0 1 0 0 1   0 0 1 0 0  0 0 0 25 -15" result="glow"/>
+      <feBlend in="SourceGraphic" in2="glow" mode="screen"/>
+    </filter>
+
+    <!-- Shimmer Effect -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0">
+        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.3">
+        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0">
+        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Luxury Border -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#b8860b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="10s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Luxury Background -->
+  <rect width="100%" height="100%" fill="url(#ultraBg)"/>
+  <rect width="100%" height="100%" fill="url(#diamondPattern)">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Flowing Lines Background -->
+  <g opacity="0.4">
+    <path d="M0 100 Q300 50 600 100 Q900 150 1200 100" stroke="url(#luxuryGold)" stroke-width="1" fill="none">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite"
+        values="M0 100 Q300 50 600 100 Q900 150 1200 100;
+                M0 150 Q300 100 600 150 Q900 100 1200 150;
+                M0 100 Q300 50 600 100 Q900 150 1200 100"/>
+    </path>
+    <path d="M0 300 Q300 250 600 300 Q900 350 1200 300" stroke="url(#luxuryGold)" stroke-width="1" fill="none">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+        values="M0 300 Q300 250 600 300 Q900 350 1200 300;
+                M0 350 Q300 300 600 350 Q900 300 1200 350;
+                M0 300 Q300 250 600 300 Q900 350 1200 300"/>
+    </path>
+  </g>
+
+  <!-- Main Logo Container -->
+  <g transform="translate(600,200)" filter="url(#ultraGlow)">
+    <!-- Animated Circles -->
+    <g opacity="0.5">
+      <circle cx="0" cy="0" r="120" stroke="url(#luxuryGold)" stroke-width="1" fill="none">
+        <animate attributeName="r" values="120;125;120" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="100" stroke="url(#luxuryGold)" stroke-width="1" fill="none">
+        <animate attributeName="r" values="100;105;100" dur="3s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+    </g>
+
+    <!-- Premium Scissors Icon -->
+    <g transform="translate(-40,-40) scale(0.3)" filter="url(#premiumGlass)">
+      <path d="M100 100 C120 80 160 80 180 100 L220 60 C230 50 245 50 255 60 C265 70 265 85 255 95 L215 135 L255 175 C265 185 265 200 255 210 C245 220 230 220 220 210 L180 170 C160 190 120 190 100 170 C80 150 80 120 100 100 Z" 
+            fill="url(#luxuryGold)" stroke="#ffffff" stroke-width="3">
+        <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="100" cy="135" r="15" fill="#ffffff">
+        <animate attributeName="r" values="15;17;15" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Premium Text -->
+    <g filter="url(#premiumGlass)">
+      <text x="0" y="70" 
+            text-anchor="middle" 
+            fill="#ffffff" 
+            font-family="Arial, sans-serif" 
+            font-size="55" 
+            font-weight="900"
+            letter-spacing="5"
+            opacity="0.9">
+        ADHAM
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+      </text>
+      
+      <text x="0" y="130" 
+            text-anchor="middle" 
+            fill="#ffffff" 
+            font-family="Arial, sans-serif" 
+            font-size="55" 
+            font-weight="900"
+            letter-spacing="5"
+            opacity="0.9">
+        MANSOUR
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="0" y="180" 
+            text-anchor="middle" 
+            fill="url(#luxuryGold)" 
+            font-family="Arial, sans-serif" 
+            font-size="25"
+            letter-spacing="15"
+            font-weight="bold">
+        PREMIUM SALON
+        <animate attributeName="letter-spacing" values="15;17;15" dur="3s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+
+  <!-- Ultra Premium Corner Elements -->
+  <g stroke="url(#luxuryGold)" stroke-width="2" fill="none" filter="url(#premiumGlass)">
+    <!-- Top Left -->
+    <path d="M40 40 L120 40 Q140 40 140 60 L140 120">
+      <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top Right -->
+    <path d="M1160 40 L1080 40 Q1060 40 1060 60 L1060 120">
+      <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom Left -->
+    <path d="M40 360 L120 360 Q140 360 140 340 L140 280">
+      <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom Right -->
+    <path d="M1160 360 L1080 360 Q1060 360 1060 340 L1060 280">
+      <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Animated Corner Dots -->
+  <g filter="url(#ultraGlow)">
+    <circle cx="40" cy="40" r="4" fill="url(#luxuryGold)">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1160" cy="40" r="4" fill="url(#luxuryGold)">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="40" cy="360" r="4" fill="url(#luxuryGold)">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="1160" cy="360" r="4" fill="url(#luxuryGold)">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+  </g>
+
+  <!-- Shimmer Overlay -->
+  <rect width="100%" height="100%" fill="url(#shimmer)" opacity="0.1">
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
