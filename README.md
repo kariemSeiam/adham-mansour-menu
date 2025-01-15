@@ -1,145 +1,58 @@
-# Adham Mansour Salon Menu 💈
+# ✂️ Adham Mansour Menu
 
-A modern, responsive web application for a professional barber salon featuring an interactive service menu, package offerings, and business information display system.
+<div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-18.3.1-61dafb.svg)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)
+  ![Salon Banner](https://raw.githubusercontent.com/KariemSeiam/adham-mansour-menu/main/public/banner.svg)
 
-## 🌟 Features
+  Modern salon menu & booking interface crafted with React & Tailwind
 
-- **Interactive Service Packages** 
-  - Dynamic pricing cards with expandable details
-  - Beautiful gradient animations
-  - RTL (Right-to-Left) support for Arabic content
+  [**Live Demo →**](https://kariemseiam.github.io/adham-mansour-menu/) 
 
-- **Service Categories**
-  - Comprehensive barber services listing
-  - Skincare treatments section
-  - Price transparency
+  [![Made with React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react&logoColor=white)](https://reactjs.org)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-- **Business Information**
-  - Location information with modal view
-  - Working hours
-  - Contact details
-  - Social media integration
+</div>
 
-- **Modern UI Components**
-  - Smooth animations and transitions
-  - Responsive design for all devices
-  - Loading states and progress indicators
-  - Beautiful gradients and glass morphism effects
+## ✨ Features 
+
+- 🎨 Modern glass-morphism UI design
+- 📱 Fully responsive layout
+- 🌐 RTL support for Arabic
+- ⚡ Lightning fast performance
+- 💳 Service packages & pricing cards
+- 🗺️ Location information modal
 
 ## 🚀 Quick Start
 
-1. **Clone the repository**
 ```bash
-git clone https://github.com/kariemSeiam/adham-mansour-menu.git
-cd adham-mansour-menu
-```
+# Clone repository
+git clone https://github.com/KariemSeiam/adham-mansour-menu.git
 
-2. **Install dependencies**
-```bash
+# Install dependencies 
 npm install
-```
 
-3. **Start development server**
-```bash
+# Start development server
 npm run dev
-```
 
-4. **Build for production**
-```bash
+# Build for production
 npm run build
 ```
 
-5. **Deploy to GitHub Pages**
-```bash
-npm run deploy
-```
+## 🛠️ Built With
 
-## 🛠️ Technology Stack
-
-- **Frontend Framework**: React 18.3.1
-- **Styling**: TailwindCSS 3.4.17
-- **Icons**: Lucide React
-- **Routing**: React Router DOM 7.1.0
-- **Charts & Visualizations**: Recharts 2.15.0
-- **Build Tool**: Vite 6.0.5
-- **Meta Tags**: React Helmet
-- **Development**: ESLint, PostCSS, Autoprefixer
-
-## 📁 Project Structure
-
-```
-adham-mansour-menu/
-├── src/
-│   ├── App.jsx           # Main application component
-│   ├── main.jsx         # Application entry point
-│   ├── components/      # Reusable components
-│   └── styles/         # CSS and Tailwind configurations
-├── public/             # Static assets
-├── index.html          # HTML template
-└── package.json       # Project dependencies and scripts
-```
-
-## 🎨 Customization
-
-### Styling
-The project uses TailwindCSS with a custom configuration. You can modify the theme in `tailwind.config.js`:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        // Add your custom colors here
-      },
-      // Add other theme customizations
-    }
-  }
-}
-```
-
-### Business Information
-Update the business information in `App.jsx`:
-
-```javascript
-const businessInfo = {
-  name: "YOUR_BUSINESS_NAME",
-  slogan: "YOUR_SLOGAN",
-  phone: "YOUR_PHONE",
-  // ... other business details
-};
-```
-
-## 🌐 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [React 18](https://reactjs.org) - UI Framework
+- [Tailwind CSS](https://tailwindcss.com) - Styling
+- [Vite](https://vitejs.dev) - Build Tool
+- [Lucide Icons](https://lucide.dev) - Icons
+- [React Router](https://reactrouter.com) - Routing
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Released under MIT License. See [LICENSE](LICENSE) for details.
 
-## 🙏 Acknowledgments
+<div align="center">
 
-- [TailwindCSS](https://tailwindcss.com) for the amazing utility-first CSS framework
-- [Lucide Icons](https://lucide.dev) for the beautiful icons
-- [React](https://reactjs.org) for the awesome frontend library
-- All contributors who have helped this project
+Made with ❤️ by [Kariem Seiam](https://github.com/KariemSeiam)
 
----
-
-Made with ❤️ by Kariem Seiam
+</div>
