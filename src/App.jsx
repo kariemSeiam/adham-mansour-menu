@@ -30,14 +30,14 @@ const FloatingActions = ({ onLocationClick }) => {
   const items = [
     {
       icon: <Phone className="w-6 h-6" />,
-      href: "tel:+201234567890",
+      href: "tel:+2001282761211",
       gradient: "from-amber-400 via-amber-500 to-amber-400",
       glow: "amber-400",
       type: "link"
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
-      href: "https://wa.me/201234567890",
+      href: "https://wa.me/+201282761211",
       gradient: "from-green-400 via-green-500 to-green-400",
       glow: "green-400",
       type: "link"
@@ -51,7 +51,7 @@ const FloatingActions = ({ onLocationClick }) => {
     },
     {
       icon: <Facebook className="w-6 h-6" />,
-      href: "https://facebook.com/yourpage",
+      href: "https://www.facebook.com/profile.php?id=61570431692035",
       gradient: "from-indigo-400 via-indigo-500 to-indigo-400",
       glow: "indigo-400",
       type: "link"
@@ -352,25 +352,18 @@ const LocationsModal = ({ isOpen, onClose, locations }) => {
           </div>
 
           {/* Actions Row */}
-          <div className={`flex items-center justify-between mt-4 
+          <div dir='ltr'
+          className={`  flex item-center justify-between mt-4 
               'opacity-100' : 'opacity-0'} transition-opacity duration-300`}>
-            <span className="text-sm text-gray-400">
+                <ChevronDown className={`w-4 h-4 text-amber-400 transition-transform duration-500 
+                  'rotate-180'`}
+                />
+            <span className="text-sm  text-amber-400"
+            dir='ltr'>
               {!isActive ? 'انقر لأظهار التفاصيل' : ''}
+              
             </span>
-            <a
-              href={location.mapUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-xl
-                  bg-gradient-to-r from-amber-400 to-amber-500
-                  hover:from-amber-500 hover:to-amber-600
-                  text-gray-900 font-medium text-sm
-                  transform hover:scale-105 transition-all duration-300"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <ExternalLink className="w-4 h-4" />
-              فتح في الخريطة
-            </a>
+            
           </div>
         </div>
       </div>
@@ -454,14 +447,14 @@ const AdhamMansourMenu = () => {
   const locations = [
     {
       name: "الفرع الرئيسي",
-      address: "123 شارع التحرير، وسط البلد، القاهرة",
-      hours: "10:00 ص - 10:00 م",
+      address: "بلبيس بجوار قهوه السيسي",
+      hours: "10:00 ص - 12:00 م",
       mapUrl: "https://goo.gl/maps/location1"
     },
     {
       name: "الفرع الثاني",
-      address: "456 شارع الهرم، الجيزة",
-      hours: "10:00 ص - 11:00 م",
+      address: "بساتين بركات بجوار مكتبه رضوان",
+      hours: "10:00 ص - 12:00 م",
       mapUrl: "https://goo.gl/maps/location2"
     }
   ];
@@ -470,11 +463,11 @@ const AdhamMansourMenu = () => {
   const businessInfo = {
     name: "ADHAM MANSOUR",
     slogan: "صالون العرسان الأول",
-    phone: "+201234567890",
-    facebook: "https://facebook.com/yourpage",
+    phone: "+201282761211",
+    facebook: "https://www.facebook.com/profile.php?id=61570431692035",
     location: {
-      address: "123 شارع التحرير، القاهرة",
-      area: "وسط البلد",
+      address: "بجوار قهوه السيسي",
+      area: "بلبيس",
       mapUrl: "https://goo.gl/maps/your-location",
       workingHours: "يومياً من 10 صباحاً حتى 10 مساءً"
     }
